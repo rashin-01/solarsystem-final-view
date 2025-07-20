@@ -16,7 +16,12 @@ module.exports = {
         publicPath: './',
     },
     resolve: {
-        extensions: ['.js', '.ts']
+        extensions: [".ts", ".js"],
+        fallback: {
+            "fs": false,
+            "path": false,
+            "perf_hooks": false
+        }
     },
     module: {
         rules: [
