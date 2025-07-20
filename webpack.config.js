@@ -13,15 +13,10 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
         filename: '[name].js',
         chunkFilename: 'vendor.js',
-        publicPath: './',
+        publicPath: '/solarsystem-final-view/',
     },
     resolve: {
-        extensions: [".ts", ".js"],
-        fallback: {
-            "fs": false,
-            "path": false,
-            "perf_hooks": false
-        }
+        extensions: ['.js', '.ts']
     },
     module: {
         rules: [
